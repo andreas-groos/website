@@ -5,7 +5,6 @@ import { WhatIs } from './WhatIs'
 import { HomeAthletes } from './HomeAthletes'
 import { HomeNews } from './HomeNews'
 import { HomeEvents } from './HomeEvents'
-import { SocialIcons } from './SocialIcons'
 import { MailingList } from './MailingList'
 
 export const Homepage = () => (
@@ -17,7 +16,6 @@ export const Homepage = () => (
     <HomeAthletes />
     <HomeNews />
     <HomeEvents />
-    <SocialIcons />
     <MailingList />
   </main >
 )
