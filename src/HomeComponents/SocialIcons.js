@@ -8,39 +8,39 @@ import styled from 'styled-components'
 import { theme } from '../utils/theme'
 
 const Title = styled.h2`
-  margin-left: 1rem;
-  margin-bottom: 0px;
   color: ${theme.colors.contrast};
+`
+const Wrapper = styled.div`
+> a:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
 `
 const A = styled.a`
   color: black;
+  padding: 0.5rem;
+  margin: 0.5rem;
 `
-
-const iconStyle = {
-  height: '3rem',
-  width: '3rem',
-  padding: '1rem',
-  border: `1px solid black`,
-  margin: '1rem'
-}
 
 export const SocialIcons = () => (
   <div>
     <Title>CONNECT WITH US</Title>
-    <A href="https://www.facebook.com/HighFivesFoundation/">
-      <FaFacebook size="3rem" style={iconStyle} />
-    </A>
-    <A href="https://twitter.com/Hi5sFoundation">
-      <FaTwitter size="3rem" style={iconStyle} />
-    </A>
-    <A href="https://www.instagram.com/hi5sfoundation/">
-      <FaInstagram size="3rem" style={iconStyle} />
-    </A>
-    <A href="https://vimeo.com/hi5sfoundation/">
-      <FaVimeo size="3rem" style={iconStyle} />
-    </A>
-    <A href="https://github.com/HighFivesFoundation">
-      <FaGithub size="3rem" style={iconStyle} />
-    </A>
+    <Wrapper>
+      <A href='https://www.facebook.com/HighFivesFoundation/'>
+        <FaFacebook size='3rem' />
+      </A>
+      <A href='https://twitter.com/Hi5sFoundation'>
+        <FaTwitter size='3rem' />
+      </A>
+      <A href='https://www.instagram.com/hi5sfoundation/'>
+        <FaInstagram size='3rem' />
+      </A>
+      <A href='https://vimeo.com/hi5sfoundation/'>
+        <FaVimeo size='3rem' />
+      </A>
+      <A href='https://github.com/HighFivesFoundation'>
+        <FaGithub size='3rem' />
+      </A>
+    </Wrapper>
   </div>
 )
